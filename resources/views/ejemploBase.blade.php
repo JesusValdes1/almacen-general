@@ -7,13 +7,48 @@
   </head>
   <body class="container mt-2">
 
-    {{-- AQUI EMPIEZA A HACER UN DISEÑO CON LOS COMPONENTES DE BOOSTRAP --}}
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mi Proyecto</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" aria-controls="navbarNav" 
+                aria-expanded="false" aria-label="Menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Acerca</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    {{-- https://getbootstrap.com/docs/5.3/getting-started/introduction/ --}}
+    <!-- Contenido principal -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col text-center">
+                {{-- <h1>Bienvenido</h1>
+                <p class="lead">Este es un layout base con Bootstrap 5.</p>
+                <button class="btn btn-primary">Acción</button> --}}
 
+                {{-- AQUI EMPIEZA A HACER UN DISEÑO CON LOS COMPONENTES DE BOOSTRAP --}}
+                {{-- LINK DE ABAJO PARA SACAR COMPONENTES --}}
+                {{-- https://getbootstrap.com/docs/5.3/getting-started/introduction/ --}}
 
-    <!-------------------------------------------------------------------------->
+                <!------------------------------ INICIO ------------------------------------>
 
+                <!-------------------------------- FIN ------------------------------------->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3 mt-auto">
+        <p class="mb-0">© 2025 Mi Proyecto - Todos los derechos reservados</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
