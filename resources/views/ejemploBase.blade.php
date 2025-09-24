@@ -27,6 +27,8 @@
     </nav>
 
     <!-- Contenido principal -->
+
+
     <div class="container my-5">
         <div class="row">
             <div class="col text-center">
@@ -38,7 +40,40 @@
                 {{-- LINK DE ABAJO PARA SACAR COMPONENTES --}}
                 {{-- https://getbootstrap.com/docs/5.3/getting-started/introduction/ --}}
 
-                <!------------------------------ INICIO ------------------------------------>
+               <h4 class="mb-4 fw-bold">INFORMACIÓN DE ENTREGA</h4>
+
+                <div class="row mb-3">
+    <div class="col-md-6">
+        <label for="nombre" class="form-label">Nombre *</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required>
+    </div>
+    <div class="col-md-6">
+        <label for="apellidos" class="form-label">Apellidos *</label>
+        <input type="text" class="form-control" id="apellidos" name="apellidos" required>
+    </div>
+    <div class="col-md-6">
+        <label for="codigo.postal" class="form-label">codigo postal *</label>
+        <input type="text" class="form-control" id="codigo.postal" name="codigo.postal" required>
+     </div>
+      <div class="col-md-6">
+        <label for="calle" class="form-label">calle *</label>
+        <input type="text" class="form-control" id="calle" name="calle" required>
+    </div>
+        <div class="col-md-6">
+        <label for="numero.exterior" class="form-label">numero exterior *</label>
+        <input type="text" class="form-control" id="numero.exterior" name="numero.exterior" required>
+    </div>
+        <div class="col-md-6">
+        <label for="nombre" class="form-label">Nombre *</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </form>
+</div>
+
+
+    </div>
+</div>
+
+
 
                 <!-------------------------------- FIN ------------------------------------->
             </div>
