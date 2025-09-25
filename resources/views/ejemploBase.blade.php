@@ -35,29 +35,59 @@
 
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre*" required>
                     </div>
 
                     <div class="col-md-6 mb-3">
-                        <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                        <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos*" required>
                     </div>
 
                     <div class="col-md-12 mb-3 w-50">
-                        <input type="text" class="form-control" id="codigoPostal" name="codigoPostal" placeholder="Codigo Postal" required>
+                        <input type="text" class="form-control" id="codigoPostal" name="codigoPostal" placeholder="Codigo Postal*" required>
                         <span class="text-body-tertiary">Ejemplo: 12345</span>
                     </div>
 
                     <div class="col-md-12 mb-3">
-                        <input type="text" class="form-control" id="calle" name="calle" placeholder="Calle" required>
+                        <input type="text" class="form-control" id="calle" name="calle" placeholder="Calle*" required>
                     </div>
 
                     <div class="col-md-6 mb-3">
-                        <input type="text" class="form-control" id="numeroExterior" name="numeroExterior" placeholder="Número Exterior" required>
+                        <input type="text" class="form-control" id="numeroExterior" name="numeroExterior" placeholder="Número Exterior*" required>
                     </div>
 
                     <div class="col-md-6 mb-3">
-                        <input type="text" class="form-control" id="numeroInterior" name="numeroInterior" placeholder="Número Interior" required>
+                        <input type="text" class="form-control" id="numeroInterior" name="numeroInterior" placeholder="Número Interior*" required>
                     </div>
+
+                    <div class="col-md-12 mb-3">
+                        <input type="text" class="form-control" id="informacionAdicional" name="informacionAdicional" placeholder="Informacion Adicional*" required>
+                        <span class="text-body-tertiary">Ejemplo: Entre la calle o informacion adicional</span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" id="colonia" name="colonia" placeholder="Colonia*" required>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" id="delegacionoMunicipio" name="delegacionoMunicipio" placeholder="Delegacion o Municipio*" required>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Ciudad*"required>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <select class="form-select fs-6" aria-label="Estado">
+                        <option selected>Estado<span class="text-danger">*</span>
+                        <option value="1">Verayork</option>
+                        <option value="2">coatzacharcos</option>
+                        <option value="3">Tampuerco</option>
+                        </select>
+                    </div>
+
+
+
+
 
                 </div>
             </div>
