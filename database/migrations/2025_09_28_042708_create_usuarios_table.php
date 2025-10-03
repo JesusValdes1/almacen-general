@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nombre', 20);
             $table->string('apellidos', 20)->nullable();
-            $table->string('contraseña', 8);
+            $table->string('contrasenia', 8);
             $table->integer('estado');
             $table->timestamps();
         });

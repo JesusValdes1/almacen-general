@@ -34,29 +34,43 @@ class HomeController extends Controller
 
     public function storeUsuario(Request $request)
     {
-        $rules = [
-            'nombre' => 'required|string|max:20',
-            'apellidos' => 'nullable|string|max:20',
-            'password' => 'required|string|max:8',
-            'estado' => 'required|integer',
-        ];
+        try {
 
-        $messages = [
-            'nombre.required' => "El campo Nombre Corto es requerido",
-            'nombre.required' => "El campo Nombre es requerido",
-            'nombre.unique' => 'El valor del campo Nombre ya existe',
-            'nombre.max' => 'El campo Nombre debe tener máximo :max caracteres',
-        ];
+            $rules = [
+                'nombre' => 'required|string|max:20',
+                'apellidos' => 'nullable|string|max:20',
+                'contrasenia' => 'required|string|max:8',
+                'estado' => 'required|integer',
+            ];
 
-        // Guardar usuario
-        Usuario::create([
-            'nombre' => $request->nombre,
-            'apellidos' => $request->apellidos,
-            'contraseña' => $request->password,
-            'estado' => $request->estado,
-        ]);
+            $messages = [
+                'nombre.required' => "El campo nombre es requerido.",
+                'nombre.max' => 'El nombre debe tener máximo :max caracteres.',
+                'apellidos.max' => 'El apellido debe tener máximo :max caracteres.',
+                'contrasenia.required' => 'La contraseña es requerida.',
+                'contrasenia.max' => 'La contraseña debe tener máximo :max caracteres.',
+                'estado.required' => 'El estado es requerido.',
+                'estado.integer' => 'El estado debe ser un número entero.',
+            ];
 
-        return redirect()->back()->with('success', 'Usuario guardado correctamente.');
+                $validated = $request->validate($rules, $messages);
+
+                $usuario = Usuario::create($validated);
+
+                $respuesta = [
+                    'error' => false,
+                    'usuario' => $usuario
+                ];
+
+        } catch (Exception $e) {
+            $respuesta = [
+                'codigo' => 500,
+                'error' => true,
+                'errorMessage' => $e->getMessage()
+            ];
+        }
+
+        return $respuesta;
     }
 
     /**
